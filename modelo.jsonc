@@ -1,0 +1,40 @@
+{
+  "model_function": "(x * 10) + (y * 5) + z**2",
+  "variables": {
+    "x": {
+      "distribution": "normal",
+      "params": {
+        "loc": 100,
+        "scale": 10
+      }
+    },
+    "y": {
+      "distribution": "uniform",
+      "params": {
+        "low": 0,
+        "high": 50
+      }
+    },
+    "z": {
+      "distribution": "poisson",
+      "params": {
+        "lam": 3.0
+      }
+    }
+  },
+  "simulation_count": 100000
+}
+
+/* {
+  "model_function": "math.pi * (r**2)",
+  "variables": {
+    "r": {
+      "distribution": "uniform",
+      "params": {
+        "low": 9.5,
+        "high": 10.5
+      }
+    }
+  },
+  "simulation_count": 100000
+} */
